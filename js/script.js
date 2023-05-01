@@ -68,7 +68,7 @@ Btnhold.addEventListener('click',function(){
     scores[activePlayer] = scores[activePlayer] + currentScore
     document.querySelector(`.score-${activePlayer}`).textContent = scores[activePlayer]
     
-    if(scores[activePlayer]>=10){
+    if(scores[activePlayer]>=100){
         document.querySelector(`.score-${activePlayer}`).textContent = 'Winner'
         if(activePlayer==0){
             player0.classList.add('win')
